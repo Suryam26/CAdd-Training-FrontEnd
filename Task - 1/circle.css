@@ -1,0 +1,29 @@
+div {
+    margin: auto;
+    border-radius: 50%;
+}
+
+#c3 {
+    position: relative;
+    background-color: #e91e63;
+    width: 400px;
+    height: 400px;
+}
+
+#c2 {
+    position: absolute;
+    background-color: #ec407a;
+    width: 300px;
+    height: 300px;
+    top: 50px;
+    left: 50px;
+}
+
+#c1 {
+    position: absolute;
+    background-color: #f06292;
+    width: 200px;
+    height: 200px;
+    top: 50px;
+    left: 50px;
+}

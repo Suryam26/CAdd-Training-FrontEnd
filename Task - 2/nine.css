@@ -1,0 +1,15 @@
+#board {
+    width: fit-content;
+    margin: auto;
+    background-color: #01579b;
+    border-radius: 10px;
+    padding: 2%;
+}
+
+.row > div {
+    display: inline-block;
+    background-color: #03a9f4;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px 50px;
+}
