@@ -1,0 +1,11 @@
+<input [(ngModel)]="given" (change)="convert()" placeholder="Enter Amount">
+<select id="from" [(ngModel)]="from" (change)="convert()"> 
+    <option *ngFor="let rate of rates | keyvalue" [value]="rate.key">{{rate.key}}</option> 
+</select> 
+
+<br><br>
+
+<input readonly [value]="converted">
+<select id="to" [(ngModel)]="to" (change)="convert()"> 
+    <option *ngFor="let rate of rates | keyvalue" [value]="rate.key">{{rate.key}}</option> 
+</select> 
