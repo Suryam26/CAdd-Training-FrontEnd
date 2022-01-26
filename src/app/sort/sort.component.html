@@ -1,0 +1,21 @@
+<p>
+    Sort By:
+    <span style="margin: 10px;">
+        <input [(ngModel)]="sortBy" (change)="changeSortBy()" type="radio" id="name" name="sortBy" value="name">
+        <label for="name">Name</label>
+    </span>
+    <span>
+        <input [(ngModel)]="sortBy" (change)="changeSortBy()" type="radio" id="age" name="sortBy" value="age">
+        <label for="age">Age</label><br>
+    </span>
+
+    Type:
+    <span style="margin: 10px;">
+        <input [(ngModel)]="type" (change)="changeType()" type="radio" id="asce" name="type" value="asce">
+        <label for="asce">Ascending</label>
+    </span>
+    <span>
+        <input [(ngModel)]="type" (change)="changeType()" type="radio" id="desc" name="type" value="desc">
+        <label for="desc">Descending</label><br>
+    </span>
+</p>
