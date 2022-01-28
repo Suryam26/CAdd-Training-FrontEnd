@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 import { User } from '../user';
 
 @Component({
@@ -9,8 +10,14 @@ import { User } from '../user';
 export class ChildComponent implements OnInit {
   @Input() users?: User[];
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
+  }
+
+  navigateTo(id: number): void {
+    const navigationUrl: string[] = ['/detail'];
+    navigationUrl.push(id.toString());
+    this.router.navigate(navigationUrl);
   }
 }

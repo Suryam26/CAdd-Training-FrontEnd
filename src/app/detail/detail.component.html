@@ -1,0 +1,11 @@
+<div *ngIf="user">
+    <nav>
+        <a routerLink="">Home</a>
+    </nav>
+    <h4>Title: {{user.title}}</h4>
+    <p>
+        <strong>ID:</strong> {{user.id}} <br/>
+        <strong>User ID:</strong> {{user.userId}} <br/>
+        <strong>Body:</strong> {{user.body}}
+    </p>
+</div>
