@@ -22,10 +22,10 @@ const DetailPost = () => {
             <nav>
                 <Link to="/">Home</Link>
             </nav>
-            <h4>Title: {post.title}</h4>
             <p>
                 <strong>ID:</strong> {post.id} <br/>
                 <strong>User ID:</strong> {post.userId} <br/>
+                <strong>Title:</strong> {post.title} <br/>
                 <strong>Body:</strong> {post.body}
             </p>
         </>
