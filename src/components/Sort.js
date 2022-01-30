@@ -4,7 +4,7 @@ const Sort = ({ changeSortBy, changeType }) => {
     return(
         <>
             <div onChange={(event => changeSortBy(event.target.value))}>
-            Sort By:
+            <strong>Sort By:</strong>
                 <span style={{margin: "10px"}}>
                     <input type="radio" id="name" name="sortBy" value="name" />
                     <label htmlFor="name">Name</label>
@@ -16,7 +16,7 @@ const Sort = ({ changeSortBy, changeType }) => {
             </div>
 
             <div onChange={(event => changeType(event.target.value))}>
-                Type:
+                <strong>Type:</strong>
                 <span style={{margin: "10px"}}>
                     <input type="radio" id="asce" name="type" value="asce" />
                     <label htmlFor="asce">Ascending</label>
