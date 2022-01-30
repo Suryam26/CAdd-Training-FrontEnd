@@ -1,12 +1,16 @@
 <table>
-    <tr>
-        <th>ID</th>
-        <th>Name</th>
-        <th>Birthday</th>
-    </tr>
-    <tr *ngFor="let user of detials">
-        <td>{{user.id}}</td>
-        <td>{{user.name}}</td>
-        <td>{{user.birthDate}}</td>
-    </tr>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Birthday</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of detials">
+            <td>{{user.id}}</td>
+            <td>{{user.name}}</td>
+            <td>{{user.birthDate}}</td>
+        </tr>
+    </tbody>
 </table>
